@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --violeta:hsl(263, 55%, 52%);
+    --cinza:hsl(217, 19%, 35%);
+    --cinza-escuro:hsl(219, 29%, 14%);
+    --branco:#fff;
+    --cinza-claro:hsl(0, 0%, 81%);
+    --cinza-fundo:hsl(210, 46%, 95%);
+
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: var(--cinza-fundo);
+
+}
+
+.container{
+    width: 80%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    
+}
+
+.container__conteudo{
+    background-color: gray;
+    border-radius: 15px;
+    padding: 2rem;
+
+}
+
+.conteudo__img{
+    border-radius: 50%;
+    width: 30px;
+    float: left;
+    margin-right: 1rem;
+    
+}
+
+.container__conteudo .conteudo__nomes{
+    color: var(--branco);
+    opacity: 100%;
+    font-weight: 600;
+    
+}
+
+.secao01{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: var(--violeta);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    
+}
+
+.secao02{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: var(--cinza);
+}
+
+.secao03{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:var(--branco);
+    
+}
+
+.secao04{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: var(--cinza-escuro);
+}
+
+.secao05{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: var(--branco);
+}
+
+.container__conteudo h2{
+    color: var(--branco);
+    padding: 1rem 0;
+    font-weight: 600;
+    
+}
+
+.container__conteudo p{
+    color: var(--cinza-claro);
+    opacity: 60%;
+    font-weight: 600;
+    
+}
+
+.secao03 h2, .secao05 h2{
+    color: var(--cinza);
+}
+
+.secao03 p, .secao05 p{
+    color: var(--cinza);
+    font-weight: 600;
+}
+
+.secao03 .conteudo__nomes, .secao05 .conteudo__nomes{
+    color: var(--cinza);
+    font-weight: 600;
+}
+
+
+@media (max-width: 450px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+}
+    
+
+
+
+
